@@ -1,0 +1,17 @@
+.darkMode {
+  position: absolute;
+  top: 3rem;
+  right: -8rem;
+  button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .moon-icon {
+    fill: #2c3333;
+  }
+  .sun-icon {
+    fill: #f2cd5c;
+    color: #f2cd5c;
+  }
+}

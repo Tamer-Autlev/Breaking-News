@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+.article-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  h1 {
+    font-size: 4rem;
+    font-family: "Lora", serif;
+    margin-bottom: 2rem;
+  }
+  img {
+    width: 50vw;
+    height: 50vh;
+    margin-bottom: 2rem;
+  }
+  .description {
+    font-size: 3rem;
+    font-family: "Mulish", sans-serif;
+    width: 50%;
+  }
+}

@@ -1,0 +1,36 @@
+$background-color: #f5f5f5;
+$dark-color: #151515;
+$light-color: #f5f5f5;
+$light-text-color: #f5f5f5;
+$dark-text-color: #151515;
+$dark-border: rgb(54, 54, 54);
+$light-border: rgb(209, 213, 219);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+}
+
+.dark {
+  :root {
+    --color: #{$light-color};
+    --text-color: #{$light-text-color};
+  }
+  body {
+    background-color: #{$dark-color};
+  }
+}
+.light {
+  :root {
+    --color: #{$dark-color};
+    --text-color: #{$dark-text-color};
+  }
+  body {
+    background-color: #{$light-color};
+  }
+}

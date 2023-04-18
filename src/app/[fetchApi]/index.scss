@@ -1,0 +1,21 @@
+.newsList {
+  width: 80%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem;
+  margin: auto;
+}
+
+@media (max-width: 100rem) {
+  .newsList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 64rem) {
+  .newsList {
+    grid-template-columns: 1fr;
+  }
+}

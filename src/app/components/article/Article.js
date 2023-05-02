@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import "./artical.scss";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 const Article = ({
   sourceName,
@@ -11,22 +10,7 @@ const Article = ({
   title,
   link,
 }) => {
-  const router = useRouter();
-  const urlHandler = () => {
-    const queryString = Object.entries(link)
-      .map(([key, value]) => `${key}=${value}`)
-      .join(`&`);
-    const url = `./artical?${queryString}`;
-    console.log(url);
-    router.push(url);
-  };
-  const value = {
-    sourceName: sourceName,
-    publishedAt: publishedAt,
-    description: description,
-    title: title,
-  };
-  const str = Object.entries(value).map(([key, value]) => `${key}=${value}`);
+  
 
   return (
     <article className="article-container">

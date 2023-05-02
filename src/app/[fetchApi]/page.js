@@ -1,5 +1,4 @@
 import { use } from "react";
-import Article from "../components/article/Article";
 import SortingData from "../components/sortingData/SortingData";
 import "./index.scss";
 const getData = async ({ fetchApi }) => {
